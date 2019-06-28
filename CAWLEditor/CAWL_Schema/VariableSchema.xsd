@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="variable" type="variableType"/>
+	<xs:complexType name="documentationType">
+		<xs:sequence>
+			<xs:element name="documentation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="variableType">
+		<xs:complexContent>
+			<xs:extension base="documentationType">
+				<xs:sequence>
+					<xs:element name="initialize" type="initializeType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="name" use="required"/>
+				<xs:attribute name="type" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="initializeType">
+		<xs:complexContent>
+			<xs:extension base="documentationType">
+				<xs:sequence>
+					<xs:element name="from" type="fromType"/>
+				</xs:sequence>
+				<xs:attribute name="part" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="fromType">
+		<xs:complexContent>
+			<xs:extension base="documentationType">
+				<xs:attribute name="variable" use="optional"/>
+				<xs:attribute name="part" use="optional"/>
+				<xs:attribute name="expression" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

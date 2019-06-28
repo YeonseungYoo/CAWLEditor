@@ -1,0 +1,103 @@
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+	width:12px;
+	height:12px;
+}
+
+::-webkit-scrollbar-track {
+	background:#f5f5f5;
+	border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius:10px;
+	background:#ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
+
+.body {
+	margin:0px;
+	padding:0px;
+	font-family:arial;
+}
+
+/* Shared Components Initialize */
+.initializeDiv {
+	display:none;
+}
+
+/* Title Screen */
+.titleDiv {
+	line-height:50px;
+	background-color:#1e2022;
+}
+
+.titleText {
+	color:white;
+	font-size:30px;
+	margin:0px 0px 0px 20px;
+}
+
+/* Common Bar Screen */
+.commonDiv {
+	font-size:18px;
+	position:relative;
+	z-index:2;
+}
+
+.commonDiv ul {
+	background-color:#e1eef6;
+	height:40px;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+.commonDiv li {
+	float:left;
+}
+
+.commonDiv li a {
+	display:block;
+	line-height:40px;
+	padding:0px 35px 0px 35px;
+}
+
+.commonDiv li a:hover, .commonDiv ul li:hover a {
+	background-color:#c9d6de;
+	border-bottom:1px solid #ebebeb;
+}
+
+.commonDiv li ul {
+	display:none;
+	position:absolute;
+	width:200px;
+}
+
+.commonDiv li:hover ul {
+	display:block;
+}
+
+.commonDiv li li {
+	width:200px;
+}
+
+.commonDiv li ul a {
+	font-size:16px;
+	padding:0px 0px 0px 10px;
+}
+
+.commonDiv li ul a:hover, .commonDiv li ul li:hover a {
+	background-color:#52616a;
+	color:white;
+}
+
+/* Workflow Edit Screen */
+.contentDiv {
+	background-color:white;
+	position:relative;
+	z-index:1;
+}

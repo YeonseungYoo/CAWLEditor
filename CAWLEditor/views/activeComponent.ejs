@@ -1,0 +1,713 @@
+<!-- Active Component Modal Screen -->
+<div class="activeComponentDiv" id="activeComponentDiv">
+  <div class="activeComponentContentInDiv">
+    <div class="activeComponentContentTextDiv">
+      <text class="activeComponentContentText"/>
+    </div>
+    <br><br>
+    <div class="activeComponentDescriptionTextDiv">
+      <text class="activeComponentDescriptionText">Element Name</text>
+      <br>
+      <input class="activeComponentDescriptionInput" type="text" id="activeComponentDescriptionInput"/>
+      <br><br>
+      <div class="activeComponentContentDiv" id="activeComponentContentDiv">
+      </div>
+    </div>
+    <br><br>
+    <div class="activeComponentContentButtonDiv">
+      <input class="activeComponentApplyButton" id="activeComponentApplyButton" type="button" value="Apply"/>
+      <input class="activeComponentCancelButton" id="activeComponentCancelButton" type="button" value="Cancel"/>
+    </div>
+  </div>
+</div>
+
+<!-- Message Tag Template -->
+<div class="tagTemplateOutlineDiv" id="messageTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Message</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Part" onclick="addPartTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Part Tag Template -->
+<div class="tagTemplateOutlineDiv" id="partTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Part</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Element (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Type (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Variable Tag Template -->
+<div class="tagTemplateOutlineDiv" id="variableTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Variable</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Initialize" onclick="addInitializeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Type (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Initialize Tag Template -->
+<div class="tagTemplateOutlineDiv" id="initializeTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Initialize</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add From" onclick="addFromTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Part (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- From Tag Template -->
+<div class="tagTemplateOutlineDiv" id="fromTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">From</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Variable (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Part (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Expression (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Ontology Tag Template -->
+<div class="tagTemplateOutlineDiv" id="ontologyTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Ontology</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Location (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Namespace (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Service Provider Tag Template -->
+<div class="tagTemplateOutlineDiv" id="serviceProviderTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Service Provider</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Service" onclick="addServiceTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Location (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Service Tag Template -->
+<div class="tagTemplateOutlineDiv" id="serviceTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Service</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Operation (required)</th>
+        <td><select class="tagTemplateTableSelect" onclick="requestOperation(this, '')"></select></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Activator Tag Template -->
+<div class="tagTemplateOutlineDiv" id="activatorTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Activator</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Message" onclick="addMessageTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Variable" onclick="addVariableTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Condition" onclick="addConditionTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Reuse Message Tag Template -->
+<div class="tagTemplateOutlineDiv" id="reuseMessageTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Message</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Part" onclick="addPartTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Reuse Variable Tag Template -->
+<div class="tagTemplateOutlineDiv" id="reuseVariableTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Variable</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Initialize" onclick="addInitializeTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Type (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Condition Tag Template -->
+<div class="tagTemplateOutlineDiv" id="conditionTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Condition</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Case" onclick="addCaseTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Context" onclick="addContextTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Expression (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Case Tag Template -->
+<div class="tagTemplateOutlineDiv" id="caseTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Case</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Event" onclick="addEventTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Expression (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Event Tag Template -->
+<div class="tagTemplateOutlineDiv" id="eventTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Event</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Operation (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Context Tag Template -->
+<div class="tagTemplateOutlineDiv" id="contextTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Context</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Rule" onclick="addRuleTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Priority (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Rule Tag Template -->
+<div class="tagTemplateOutlineDiv" id="ruleTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Rule</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Constraint" onclick="addConstraintTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Expression (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Constraint Tag Template -->
+<div class="tagTemplateOutlineDiv" id="constraintTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Constraint</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Subject" onclick="addSubjectTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Verb" onclick="addVerbTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Object" onclick="addObjectTagTemplate(this)"/>
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Subject Tag Template -->
+<div class="tagTemplateOutlineDiv" id="subjectTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Subject</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Type (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Value (required)</th>
+        <td><select class="tagTemplateTableSelect" onclick="requestSubject(this, '')"></select></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Verb Tag Template -->
+<div class="tagTemplateOutlineDiv" id="verbTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Verb</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Value (required)</th>
+        <td><select class="tagTemplateTableSelect" onclick="requestVerb(this, '')"></select></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Object Tag Template -->
+<div class="tagTemplateOutlineDiv" id="objectTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Object</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Type (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Value (required)</th>
+        <td><select class="tagTemplateTableSelect" onclick="requestObject(this, '')"></select></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Flow Tag Template -->
+<div class="tagTemplateOutlineDiv" id="flowTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Flow</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Message" onclick="addMessageTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Variable" onclick="addVariableTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Source" onclick="addSourceTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Sink" onclick="addSinkTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Source Tag Template -->
+<div class="tagTemplateOutlineDiv" id="sourceTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Source</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Sink Tag Template -->
+<div class="tagTemplateOutlineDiv" id="sinkTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Sink</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Node Tag Template -->
+<div class="tagTemplateOutlineDiv" id="nodeTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Node</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateCommonInput" type="button" value="Add Message" onclick="addMessageTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Variable" onclick="addVariableTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Wait" onclick="addWaitTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Condition" onclick="addConditionTagTemplate(this)"/>
+        <input class="tagTemplateCommonInput" type="button" value="Add Invoke" onclick="addInvokeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Name (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">State (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Wait Tag Template -->
+<div class="tagTemplateOutlineDiv" id="waitTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Wait</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">JoinCondition (required)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Invoke Tag Template -->
+<div class="tagTemplateOutlineDiv" id="invokeTagTemplate">
+  <div class="tagTemplateInlineDiv">
+    <div>
+      <div class="tagTemplateInlineTextDiv">
+        <text class="tagTemplateNameText">Invoke</text>
+      </div>
+      <div class="tagTemplateInlineButtonDiv">
+        <input class="tagTemplateDeleteInput" type="button" value="Remove" onclick="removeTagTemplate(this)"/>
+      </div>
+    </div>
+    <table class="tagTemplateTable">
+      <tr>
+        <th scope="row">Operation (optional)</th>
+        <td><select class="tagTemplateTableSelect" onclick="requestOperation(this, '')"></select></td>
+      </tr>
+      <tr>
+        <th scope="row">Documentation (optional)</th>
+        <td><input class="tagTemplateTableInput" type="text"></td>
+      </tr>
+    </table>
+  </div>
+</div>

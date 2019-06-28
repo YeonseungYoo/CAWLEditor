@@ -1,0 +1,36 @@
+<!-- Component Configuration Modal Screen -->
+<div class="configurationDiv" id="configurationDiv">
+  <div class="configurationContentDiv">
+  	<div class="configurationContentTextDiv">
+  	  <text class="configurationContentText">Element Configuration</text>
+    </div>
+    <br><br>
+    <div>
+      <div class="configurationSharedComponentDiv">
+        <div class="configurationSharedComponentTextDiv">
+          <text class="configurationSharedComponentText">Shared Workflow Elements</text>
+        </div>
+        <div>
+          <div>
+            <input class="configurationSharedComponentCreateButton" type="button" value="Create" onclick="clickConfigurationCreate()"/>
+            <input class="configurationSharedComponentUpdateButton" type="button" value="Update" onclick="clickConfigurationUpdate()"/>
+            <input class="configurationSharedComponentDeleteButton" type="button" value="Delete" onclick="clickConfigurationDelete()"/>
+          </div>
+          <div class="configurationSharedComponentTreeContentDiv">
+            <div class="configurationSharedComponentTreeDiv" id="configurationSharedTreeDiv">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="configurationsharedComponentDescriptionTextDiv" id="configurationOperationDiv">
+      </div>
+    </div>
+    <br>
+    <div class="configurationValidationDiv">
+      <textarea class="configurationValidationTextarea" id="configurationValidationTextarea" readonly></textarea>
+    </div>
+    <div class="configurationContentButtonDiv">
+      <input class="configurationCancelButton" id="configurationCancelButton" type="button" value="Cancel"/>
+    </div>
+  </div>
+</div>

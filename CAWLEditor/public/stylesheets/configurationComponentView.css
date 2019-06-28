@@ -1,0 +1,49 @@
+/* Details Configuration Template */
+.configurationTemplateOutlineDiv {
+	display:none;
+}
+
+.configurationTemplateInlineDiv {
+	margin:0px 0px 40px 0px;
+}
+
+.configurationTemplateNameText {
+	font-size:20px;
+}
+
+.configurationTemplateNameInput {
+	width:260px;
+	border:1px solid #ebebeb;
+	border-radius:0.25em;
+	font-size:15px;
+	padding:0.2em;
+	margin:0px 0px 20px 0px;
+	text-overflow:ellipsis;
+}
+
+table.configurationTemplateTable {
+	width:745px;
+	line-height:1.5;
+}
+
+table.configurationTemplateTable th {
+	width:200px;
+	padding:2px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+table.configurationTemplateTable td {
+	padding:2px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+.configurationTemplateTableInput {
+	width:465px;
+	border:1px solid white;
+	border-radius:0.25em;
+	font-size:15px;
+	padding:0.2em;
+	text-overflow:ellipsis;
+}

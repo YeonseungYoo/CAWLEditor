@@ -1,0 +1,23 @@
+{
+  "name": "cawleditor",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "~0.1.22",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "mysql": "2.11.1",
+    "xml-formatter": "1.0.1",
+    "xml": "1.0.1",
+    "xsd-schema-validator": "0.6.0",
+    "fs": "0.0.1-security",
+    "xmlhttprequest": "1.8.0"
+  }
+}

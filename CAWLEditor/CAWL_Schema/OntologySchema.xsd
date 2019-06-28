@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ontology" type="ontologyType"/>
+	<xs:complexType name="documentationType">
+		<xs:sequence>
+			<xs:element name="documentation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ontologyType">
+		<xs:complexContent>
+			<xs:extension base="documentationType">
+				<xs:attribute name="location" use="required"/>
+				<xs:attribute name="namespace" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

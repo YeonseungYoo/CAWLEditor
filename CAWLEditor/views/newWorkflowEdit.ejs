@@ -1,0 +1,67 @@
+<!-- New Workflow Edit Screen -->
+<div class="newWorkflowEditOutlineDiv" id="hdnDataTabDiv">
+  <div class="newWorkflowEditInlineDiv">
+    <div class="newWorkflowComponentDiv">
+      <div class="newWorkflowSharedComponentDiv">
+        <div class="newWorkflowSharedComponentTextDiv">
+          <text class="newWorkflowSharedComponentText">Shared Workflow Elements</text>
+        </div>
+        <div class="newWorkflowSharedComponentContentDiv">
+          <div class="newWorkflowSharedComponentTreeDiv" id="sharedTreeDiv">
+          </div>
+        </div>
+      </div>
+      <div class="newWorkflowBetweenSpace">
+      </div>
+      <div class="newWorkflowActiveComponentDiv">
+        <div class="newWorkflowActiveComponentTextDiv">
+          <text class="newWorkflowActiveComponentText">Workflow Elements</text>
+        </div>
+        <div>
+          <div>
+            <input class="newWorkflowActiveControllImportButton" type="button" value="Import" onclick="clickActiveTreeImport()"/>
+            <input class="newWorkflowActiveControllCreateButton" type="button" value="Create" onclick="clickActiveTreeCreate()"/>
+            <input class="newWorkflowActiveControllUpdateButton" type="button" value="Update" onclick="clickActiveTreeUpdate()"/>
+            <input class="newWorkflowActiveControllDeleteButton" type="button" value="Delete" onclick="clickActiveTreeDelete()"/>
+          </div>
+          <div class="newWorkflowActiveComponentContentDiv">
+            <div class="newWorkflowActiveComponentTreeDiv" id="activeTreeDiv">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newWorkflowBetweenScreenSpace">
+    &nbsp;
+    </div>
+    <div class="newWorkflowEditDiagramDiv">
+      <div class="newWorkflowEditDiagramTextDiv">
+        <text class="newWorkflowEditDiagramText" id="workflowEditScreenText">Workflow Edit Screen</text>
+      </div>
+      <div class="newWorkflowEditDiagramContentDiv">
+        <div class="newWorkflowEditDiagramScreenDiv" id="diagramScreenDiv">
+          <div class="newWorkflowEditDiagramWorkflowDiv" id="diagramScreenWorkflowDiv">
+          </div>
+        </div>
+        <div class="newWorkflowEditSourceScreenDiv" id="sourceScreenDiv">
+          <div class="newWorkflowEditSourceScreenDocumentDiv">
+            <textarea class="newWorkflowEditSourceScreenDocumentTextarea" id="sourceScreenTextarea" readonly></textarea>
+          </div>
+          <div class="newWorkflowEditSourceScreenValidationDiv">
+            <textarea class="newWorkflowEditSourceScreenValidationTextarea" id="validationScreenTextarea" readonly></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newWorkflowBetweenScreenSpace">
+    &nbsp;
+    </div>
+    <div class="newWorkflowEditDetailsDiv">
+      <div class="newWorkflowEditDetailsTextDiv">
+        <text class="newWorkflowEditDetailsText">Properties</text>
+      </div>
+      <div class="newWorkflowEditDetailsContentDiv" id="detailsDiv">
+      </div>
+    </div>
+  </div>
+</div>

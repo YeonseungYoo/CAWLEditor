@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="message" type="messageType"/>
+	<xs:complexType name="documentationType">
+		<xs:sequence>
+			<xs:element name="documentation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="messageType">
+		<xs:complexContent>
+			<xs:extension base="documentationType">
+				<xs:sequence>
+					<xs:element name="part" type="partType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="name" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="partType">
+		<xs:complexContent>
+			<xs:extension base="documentationType">
+				<xs:attribute name="name" use="required"/>
+				<xs:attribute name="element"/>
+				<xs:attribute name="type"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

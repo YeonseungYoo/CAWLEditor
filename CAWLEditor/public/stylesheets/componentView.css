@@ -1,0 +1,49 @@
+/* Details Template */
+.templateOutlineDiv {
+	display:none;
+}
+
+.templateInlineDiv {
+	margin:20px 0px 40px 20px;
+}
+
+.templateNameText {
+	font-size:20px;
+}
+
+.templateNameInput {
+	width:260px;
+	border:1px solid #ebebeb;
+	border-radius:0.25em;
+	font-size:15px;
+	padding:0.2em;
+	margin:0px 0px 20px 0px;
+	text-overflow:ellipsis;
+}
+
+table.templateTable {
+	width:355px;
+	line-height:1.5;
+}
+
+table.templateTable th {
+	width:125px;
+	padding:2px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+table.templateTable td {
+	padding:2px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+.templateTableInput {
+	width:230px;
+	border:1px solid white;
+	border-radius:0.25em;
+	font-size:15px;
+	padding:0.2em;
+	text-overflow:ellipsis;
+}

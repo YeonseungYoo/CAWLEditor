@@ -1,0 +1,207 @@
+/* New Workflow Edit Screen */
+.newWorkflowEditOutlineDiv {
+	display:none;
+}
+
+.newWorkflowEditInlineDiv {
+	height:932px;
+	margin:10px;
+}
+
+.newWorkflowComponentDiv {
+	float:left;
+	width:17%;
+}
+
+.newWorkflowSharedComponentDiv {
+	border:1px solid #6E7783;
+}
+
+.newWorkflowSharedComponentTextDiv {
+	background:#6E7783;
+	height:30px;
+}
+
+.newWorkflowSharedComponentText {
+	font-size:20px;
+	margin:10px;
+	color:white;
+}
+
+.newWorkflowSharedComponentContentDiv {
+	height:350px;
+}
+
+.newWorkflowSharedComponentTreeDiv {
+	height:340px;
+	margin:10px;
+	overflow:auto;
+	font-size:18px;
+}
+
+.newWorkflowBetweenSpace {
+	height:10px;
+}
+
+.newWorkflowActiveComponentDiv {
+	border:1px solid #6E7783;
+}
+
+.newWorkflowActiveComponentTextDiv {
+	background:#6E7783;
+	height:30px;
+}
+
+.newWorkflowActiveComponentText {
+	font-size:20px;
+	margin:10px;
+	color:white;
+}
+
+.newWorkflowActiveControllImportButton {
+	width:70px;
+	height:28px;
+	background-color:#8c9184;
+	color:white;
+	border:none;
+	border-radius:4px;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size:13px;
+	margin:10px 5px 10px 6px;
+}
+
+.newWorkflowActiveControllCreateButton {
+	width:70px;
+	height:28px;
+	background-color:#8c9184;
+	color:white;
+	border:none;
+	border-radius:4px;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size:13px;
+	margin:10px 5px 10px 0px;
+}
+
+.newWorkflowActiveControllUpdateButton {
+	width:70px;
+	height:28px;
+	background-color:#8c9184;
+	color:white;
+	border:none;
+	border-radius:4px;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size:13px;
+	margin:10px 5px 10px 0px;
+}
+
+.newWorkflowActiveControllDeleteButton {
+	width:70px;
+	height:28px;
+	background-color:#8c9184;
+	color:white;
+	border:none;
+	border-radius:4px;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size:13px;
+	margin:10px 5px 10px 0px;
+}
+
+.newWorkflowActiveComponentContentDiv {
+	height:445px;
+}
+
+.newWorkflowActiveComponentTreeDiv {
+	height:435px;
+	margin:5px 10px 10px 10px;
+	overflow:auto;
+	font-size:18px;
+}
+
+.newWorkflowBetweenScreenSpace {
+	float:left;width:10px;
+}
+
+.newWorkflowEditDiagramDiv {
+	float:left;
+	width:60%;
+	border:1px solid #6E7783;
+}
+
+.newWorkflowEditDiagramTextDiv {
+	background:#6E7783;
+	height:30px;
+}
+
+.newWorkflowEditDiagramText {
+	font-size:20px;
+	margin:10px;
+	color:white;
+}
+
+.newWorkflowEditDiagramContentDiv {
+	height:900px;
+}
+
+.newWorkflowEditDiagramScreenDiv {
+	display:block;
+	height:900px;
+	overflow:auto;
+}
+
+.newWorkflowEditDiagramWorkflowDiv {
+	width:4000px;
+	height:3000px;
+}
+
+.newWorkflowEditSourceScreenDiv {
+	display:none;
+}
+
+.newWorkflowEditSourceScreenDocumentDiv {
+	height:750px;
+	border-bottom:1px solid #6E7783;
+}
+
+.newWorkflowEditSourceScreenDocumentTextarea {
+	width:100%;
+	height:100%;
+	border:none;
+	font-size:1.2em;
+}
+
+.newWorkflowEditSourceScreenValidationDiv {
+	height:150px;
+}
+
+.newWorkflowEditSourceScreenValidationTextarea {
+	width:100%;
+	height:100%;
+	border:none;
+	font-size:1.2em;
+}
+
+.newWorkflowEditDetailsDiv {
+	float:left;
+	width:21.9%;
+	border:1px solid #6E7783;
+}
+
+.newWorkflowEditDetailsTextDiv {
+	background:#6E7783;
+	height:30px;
+}
+
+.newWorkflowEditDetailsText {
+	font-size:20px;
+	margin:10px;
+	color:white;
+}
+
+.newWorkflowEditDetailsContentDiv {
+	height:900px;
+	overflow:auto;
+}

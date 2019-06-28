@@ -1,0 +1,555 @@
+<!-- Message Detail Template -->
+<div class="templateOutlineDiv" id="messageTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Message</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Part Detail Template -->
+<div class="templateOutlineDiv" id="partTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Part</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Element</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Type</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Variable Detail Template -->
+<div class="templateOutlineDiv" id="variableTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Variable</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Type</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Initialize Detail Template -->
+<div class="templateOutlineDiv" id="initializeTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Initialize</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Part</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- From Detail Template -->
+<div class="templateOutlineDiv" id="fromTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">From</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Variable</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Part</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Expression</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ontology Detail Template -->
+<div class="templateOutlineDiv" id="ontologyTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Ontology</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Location</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Namespace</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Service Provider Detail Template -->
+<div class="templateOutlineDiv" id="serviceProviderTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Service Provider</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Location</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Service Detail Template -->
+<div class="templateOutlineDiv" id="serviceTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Service</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Operation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Activator Detail Template -->
+<div class="templateOutlineDiv" id="activatorTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Activator</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Reuse Message Detail Template -->
+<div class="templateOutlineDiv" id="reuseMessageTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Message</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Reuse Varialbe Detail Template -->
+<div class="templateOutlineDiv" id="reuseVariableTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Variable</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Type</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Condition Detail Template -->
+<div class="templateOutlineDiv" id="conditionTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Condition</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Expression</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Case Detail Template -->
+<div class="templateOutlineDiv" id="caseTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Case</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Expression</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Event Detail Template -->
+<div class="templateOutlineDiv" id="eventTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Event</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Operation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Context Detail Template -->
+<div class="templateOutlineDiv" id="contextTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Context</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Priority</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Rule Detail Template -->
+<div class="templateOutlineDiv" id="ruleTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Rule</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Expression</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Constraint Detail Template -->
+<div class="templateOutlineDiv" id="constraintTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Constraint</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Subject Detail Template -->
+<div class="templateOutlineDiv" id="subjectTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Subject</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Type</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Value</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Verb Detail Template -->
+<div class="templateOutlineDiv" id="verbTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Verb</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Value</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Object Detail Template -->
+<div class="templateOutlineDiv" id="objectTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Object</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Type</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Value</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Flow Detail Template -->
+<div class="templateOutlineDiv" id="flowTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Flow</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Source Detail Template -->
+<div class="templateOutlineDiv" id="sourceTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Source</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Sink Detail Template -->
+<div class="templateOutlineDiv" id="sinkTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Sink</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Node Detail Template -->
+<div class="templateOutlineDiv" id="nodeTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Element Name</text><br>
+    <input class="templateNameInput" type="text" readonly/><br><br>
+    <text class="templateNameText">Node</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Name</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">State</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Wait Detail Template -->
+<div class="templateOutlineDiv" id="waitTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Wait</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">JoinCondition</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Invoke Detail Template -->
+<div class="templateOutlineDiv" id="invokeTemplate">
+  <div class="templateInlineDiv">
+    <text class="templateNameText">Invoke</text><br>
+    <table class="templateTable">
+      <tbody>
+        <tr>
+          <th scope="row">Operation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+        <tr>
+          <th scope="row">Documentation</th>
+          <td><input class="templateTableInput" type="text" readonly></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

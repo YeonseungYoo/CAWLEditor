@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/librarys/tabs.css"/>
+    <link type="text/css" rel="stylesheet" href="/librarys/jqtree.css"/>
+    <link href="/librarys/jquery.flowchart.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/stylesheets/index.css"/>
+    <link rel="stylesheet" href="/stylesheets/newCAWLDocument.css"/>
+    <link rel="stylesheet" href="/stylesheets/newWorkflowEdit.css"/>
+    <link rel="stylesheet" href="/stylesheets/activeComponent.css"/>
+    <link rel="stylesheet" href="/stylesheets/componentView.css"/>
+    <link rel="stylesheet" href="/stylesheets/configurationComponentEdit.css"/>
+    <link rel="stylesheet" href="/stylesheets/configurationComponent.css"/>
+    <link rel="stylesheet" href="/stylesheets/configurationComponentView.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="librarys/tdi.tabs.js"></script>
+    <script type="text/javascript" src="librarys/tree.jquery.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="librarys/jquery.flowchart.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="javascripts/eventHandler.js"></script>
+    <script src="javascripts/ajaxRequester.js"></script>
+    <script src="javascripts/activeComponentImporter.js"></script>
+    <script src="javascripts/activeComponentCreater.js"></script>
+    <script src="javascripts/activeComponentUpdater.js"></script>
+    <script src="javascripts/activeComponentDeleter.js"></script>
+    <script src="javascripts/componentViewer.js"></script>
+    <script src="javascripts/configurationHandler.js"></script>
+    <script src="javascripts/configurationCreater.js"></script>
+    <script src="javascripts/configurationViewer.js"></script>
+    <script src="javascripts/configurationDeleter.js"></script>
+    <script src="javascripts/configurationUpdater.js"></script>
+  </head>
+  <body class="body">
+  
+    <!-- Shared Components Initialize -->
+    <input class="initializeDiv" type="button" id="initializeButton" onclick="getSharedComponent()"/>
+    
+    <!-- Title Screen -->
+    <div class="titleDiv" id="titleDiv">
+      <text class="titleText">CAWL Editor</text>
+    </div>
+    
+    <!-- Common Bar Screen -->
+    <div class="commonDiv" id="commonDiv">
+      <ul>
+        <li><a>File</a>
+          <ul>
+            <li><a id="newCAWLButton">New</a></li>
+            <li><a>Open</a></li>
+            <li><a>Close</a></li>
+            <li><a>Close All</a></li>
+            <li><a id="cawlSaveButton">Save</a></li>
+            <li><a>Save All</a></li>
+            <li><a>Exit</a></li>
+          </ul>
+        </li>
+        <li><a>Edit</a>
+          <ul>
+            <li><a>Undo</a></li>
+            <li><a>Redo</a></li>
+            <li><a>Cut</a></li>
+            <li><a>Copy</a></li>
+            <li><a>Paste</a></li>
+            <li><a>Delete</a></li>
+            <li><a>Select All</a></li>
+            <li><a>Find</a></li>
+          </ul>
+        </li>
+        <li><a>View</a>
+          <ul>
+            <li><a id="viewDiagramButton">Diagram</a></li>
+            <li><a id="viewSourceButton">Source</a></li>
+          </ul>
+        </li>
+        <li><a>Review</a>
+          <ul>
+            <li><a id="validationCheckButton">Validation</a></li>
+          </ul>
+        </li>
+        <li><a>Setup</a>
+          <ul>
+            <li><a id="componentConfigurationButton">Element Configuration</a></li>
+          </ul>
+        </li>
+        <li><a>Help</a>
+          <ul>
+            <li><a>Help Contents</a></li>
+            <li><a>About CAWL Editor</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Workflow Edit Screen -->
+    <div class="contentDiv" id="contentDiv">
+      <div id="adddivtabdiv">
+        <ul class="tabs" id="adddivtab">
+        </ul>
+        <div class="tabcontents" id="adddivtabbody">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Include New CAWL Document -->
+    <% include ./newCAWLDocument.ejs %>
+    
+    <!-- Include New Workflow Edit -->
+    <% include ./newWorkflowEdit.ejs %>
+    
+    <!-- Include Active Component -->
+    <% include ./activeComponent.ejs %>
+    
+    <!-- Include View Component -->
+    <% include ./componentView.ejs %>
+    
+     <!-- Include Configuration Component Edit -->
+     <% include ./configurationComponentEdit.ejs %>
+     
+     <!-- Include Configuration Component -->
+     <% include ./configurationComponent.ejs %>
+     
+     <!-- Include Configuration Component View -->
+     <% include ./configurationComponentView.ejs %>
+  </body>
+</html>
